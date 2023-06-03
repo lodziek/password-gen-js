@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e3f8ff;
+    color: #fff;
+}
+
+.generator {
+    background-color: #345d78;
+    width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.442);
+}
+
+div.password {
+    display: grid;
+    grid-template-columns: auto min-content;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.116);
+}
+
+div.password input {
+    padding: 7px 10px;
+    background-color: #3282b8;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+button {
+    background-color: #126298;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.116);
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #6a8da4; 
+    color: #18262c;
+}
+
+div.password button {
+    border-radius: 0;
+}
+
+div.range {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+}
+
+div.range span {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-left: 20px;
+    min-width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.228);
+}
+
+div.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+div.option label {
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.116);
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div.option input {
+    margin-left: 10px;
+}
+
+button.generate {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+@media screen and (max-width: 460px) {
+    
+    .generator {
+        width: 80%;
+    }
+
+    div.password input{
+        width: 100%;
+    }
+    
+    div.options {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
